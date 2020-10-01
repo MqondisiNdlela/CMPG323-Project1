@@ -5,6 +5,11 @@
     
 }
 
+.borderP{
+    border-style: solid;
+    border-color: darkseagreen;
+}
+
 *{box-sizing: border-box}
 
 .container{
@@ -19,8 +24,25 @@
     color: white;
 }
 
+body{background-color: cornsilk;}
+
 .Python{width: 90%; background-color: #4CAF50;}
 
 .Cpp{width: 80%; background-color: blue;}
 
 .Csharp{width: 75%; background-color: blueviolet;}
+
+.Java{width: 70%; background-color: deepskyblue;}
+
+.SQL{width: 85%;background-color: indigo;}
+
+.Git{width: 80%;background-color: cyan;}
+
+.VSCode{width: 95%; background-color: crimson;}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
