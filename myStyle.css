@@ -57,7 +57,8 @@ body{background-color: cornsilk;}
     text-align: center;
 }
 
-#edu{
+.edu{
+    background-color: rgb(226, 235, 235);
     text-align: center;
 }
 
