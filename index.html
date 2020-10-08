@@ -10,10 +10,21 @@
 
     <body>
 
+        <SCRIPT>
+            function ShowAndHide() {
+                var x = document.getElementsByClassName('marginLR');
+                if (x.style.display == 'none') {
+                    x.style.display = 'block';
+                } else {
+                    x.style.display = 'none';
+                }
+            }
+        </SCRIPT>
+
     <div class="intro">
         <div id="intro">
             <h1 class="fade-in">Hi! Who am I? Click the button below if you are interested in knowing me. See you!</h1>
-            <button id="btnIntro">Get to know Mqondisi</button>
+            <button id="btnIntro"  ONCLICK="ShowAndHide()">Get to know Mqondisi</button>
         </div>
         
     </div>    
