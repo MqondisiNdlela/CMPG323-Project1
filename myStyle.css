@@ -1,3 +1,42 @@
+.column{
+    width: 33.33%;
+    float: left;
+}
+
+.row{
+width: 100%;
+height: auto;
+display: flex;
+}
+
+.marginLR{
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -25px;
+    color: rgb(59, 4, 4);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
 .myPic{
 
     border: gainsboro;
@@ -17,8 +56,69 @@
     background-color: darkblue;
     color: white;
 }
+#intro{
+    margin-top: 25%;
+}
+#btnIntro{
+    animation: fadeIn 5s;
+}
+
+.intro{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 98%;
+    height: 98%;
+    background-image: url("/root/Desktop/CMPG323 Project1/index.jpeg");
+    z-index: 1;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition:all 0.5s;
+}
+
+.styled{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                        rgba(0, 0, 0, .2),
+                        rgba(0.0, 0, 0, .2) 30%,
+                        rgba(0, 0, 0, 0));
+
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover{
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active{
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+    inset 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 5s ease-in forwards;
+}
 
 *{box-sizing: border-box}
+
 
 .container{
     width: 50%;
@@ -96,55 +196,3 @@ body{background-color: cornsilk; font-size: 1.2em; margin: 0;}
 #skill{
     text-align: center;
 }
-
-.slider{
-
-}
-
-.column{
-    width: 33.33%;
-    float: left;
-}
-
-.row{
-width: 100%;
-height: auto;
-display: flex;
-}
-
-.checked{
-    background: gold;
-    clip-path: polygon(50%,0%,35%,98%,35%,68%,57%,79%,91%,50%,70%,21%,91%,32%,57%,2%,35%,39%,35%);
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-}
-
-.marginLR{
-    margin-right: 5rem;
-    margin-left: 5rem;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -25px;
-    color: rgb(59, 4, 4);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
