@@ -69,7 +69,7 @@ display: flex;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/root/Desktop/CMPG323 Project1/index.jpeg");
+    background-image: url(index.jpeg);
     z-index: 1;
     color: white;
     text-align: center;
